@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/asset">
+        <file>image/favicon.ico</file>
+        <file>style/myMenu.qss</file>
+        <file>image/loginBack.jpg</file>
+        <file>image/login.png</file>
+        <file>image/login_elephent.jpg</file>
+        <file>image/head.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,21 @@
+QMenuBar {
+    background: lightgray;
+    border: 1px solid #aaa;
+    margin: 2px; /* 菜单与菜单栏的间距 */
+}
+
+    QMenuBar::item {
+        background: lightgray;
+        border: none;
+        padding: 5px 8px;
+    }
+
+        QMenuBar::item:selected {
+            background-color: lightcyan;
+        }
+
+QMenu::item:selected {
+    background: green;
+    color: red;
+}
+
