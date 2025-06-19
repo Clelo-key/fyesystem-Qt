@@ -38,7 +38,6 @@ int main(int argc, char *argv[]) {
   });
   dia->show();
 
-  qDebug() << "API密钥(字符串形式):" << QString(qgetenv("AiKey")).remove('\n');
   // w->show();
 
   return (QApplication::exec());
