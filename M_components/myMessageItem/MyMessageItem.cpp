@@ -48,7 +48,6 @@ MyMessageItem::~MyMessageItem() {}
 
 QSize MyMessageItem::sizeHint() const {
   QSize scal = calculateBubbleSize();
-
   return QSize(scal.width()+10, scal.height() + 50);
 }
 

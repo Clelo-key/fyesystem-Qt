@@ -24,11 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
   setWindowIcon(QIcon(":/asset/image/favicon.ico"));
   setWindowTitle("FyeSystem");
 
-  // 添加示例消息
-  // 延迟添加初始消息 - 使用单次定时器
-  QTimer::singleShot(100, this, [this]() {
-    addMessage("欢迎使用FyeSystem聊天功能", E_WHOSAY::eFriend);
-  });
+
   // 连接信号和槽
   connect(messagebox, &MyMessageBox::cancle, this,
           [&]() { this->sureQuit = false; });
@@ -37,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->sureQuit = true;
     this->close();
   });
+
   // 连接HTTP管理器信号
   // 连接HttpRequestManager信号
   connect(httpManager, &HttpRequestManager::requestCompleted, this,
