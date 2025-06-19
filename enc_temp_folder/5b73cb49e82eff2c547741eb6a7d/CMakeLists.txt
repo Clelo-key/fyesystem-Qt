@@ -4,7 +4,6 @@ project(FyeQt VERSION 0.1 LANGUAGES CXX C)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
-
 cmake_policy(SET CMP0118 NEW)
 set(CMAKE_PREFIX_PATH "D:/Qt/6.9.0/msvc2022_64")
 set(MYSQL_DIR "D:/MySQL/MySQL Server 8.0")
@@ -25,14 +24,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)  # Windows中CMake会将dll文件放在RUNTIME下
-
-# 指定Qwen大模型的Key
-if(DEFINED ENV{AiKey})
-    message("AiKey: $ENV{AiKey}")
-    set(AiKey ENV{AiKey})
-else()
-    message(FATAL_ERROR "NOT DEFINED AiKey VARIABLES, Please read README.md")
-endif()
 
 message(${CMAKE_BINARY_DIR})
 
