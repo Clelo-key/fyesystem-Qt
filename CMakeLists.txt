@@ -29,7 +29,6 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)  # Windows中CMake�
 # 指定Qwen大模型的Key
 if(DEFINED ENV{AiKey})
     message("AiKey: $ENV{AiKey}")
-    set(AiKey ENV{AiKey})
 else()
     message(FATAL_ERROR "NOT DEFINED AiKey VARIABLES, Please read README.md")
 endif()
